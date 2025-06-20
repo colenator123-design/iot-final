@@ -1,9 +1,9 @@
 # 智慧農場 IoT 澆水決策系統 
 
-本專案模擬一套基於 **oneM2M 架構**的智慧農場 IoT 系統，結合 **App Inventor**、**Node-RED**、與 **Mobius (OM2M)**，根據「土壤濕度」與「降雨機率」進行自動澆水判斷與控制，實現智慧化節水農業管理。
+本專案模擬一套基於 **oneM2M 架構**的智慧農場 IoT 系統，結合 **App Inventor**、**Node-RED**、與 **OM2M**，根據「土壤濕度」與「降雨機率」進行自動澆水判斷與控制，實現智慧化節水農業管理。
 
 ## 系統架構
-[App Inventor] → [Node-RED] → [Mobius: sensorData Container]
+[App Inventor] → [Node-RED] → [OM2M: sensorData Container]
 ↓
 Notification (Subscription)
 ↓
@@ -34,7 +34,7 @@ Notification (Subscription)
 - 啟動 Node-RED（預設埠號 http://localhost:1880）
 
 ###  App 操作流程
-
+- 下載apk
 - 輸入土壤濕度與降雨機率（數字格式）
 - 輸入 Node-RED 的 IP 位址，例如 `192.168.1.100`
 - 點擊傳送，會呼叫 `http://<IP>:1880/sensorData`
@@ -52,7 +52,7 @@ Notification (Subscription)
 
 ## 資源
 
-- `SmartFarmApp.aia`：App Inventor 專案檔
+- `SmartFarmApp.apk`：App Inventor 專案檔
 - `SmartFarmFlow.json`：Node-RED Flow 匯出檔
 - `screenshots/`：畫面截圖資料夾
 
