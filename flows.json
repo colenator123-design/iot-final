@@ -1,0 +1,558 @@
+[
+    {
+        "id": "ae9bfe205a6f55de",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "d66edc050426c4d8",
+        "type": "inject",
+        "z": "ae9bfe205a6f55de",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 340,
+        "y": 140,
+        "wires": [
+            [
+                "4b54062ec8a619f1"
+            ]
+        ]
+    },
+    {
+        "id": "4b54062ec8a619f1",
+        "type": "Application",
+        "z": "ae9bfe205a6f55de",
+        "name": "",
+        "platform": "ae1f9451e7ecdcc0",
+        "name1": "f3c91e4137db8229",
+        "pointOfAccess": "",
+        "obixAnnounce": false,
+        "width": 0,
+        "options": [
+            {
+                "label": "",
+                "value": ""
+            }
+        ],
+        "cntInstance": "",
+        "x": 550,
+        "y": 140,
+        "wires": [
+            [
+                "eef98c8ad25c56b3"
+            ]
+        ]
+    },
+    {
+        "id": "eef98c8ad25c56b3",
+        "type": "debug",
+        "z": "ae9bfe205a6f55de",
+        "name": "msg.payload",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 730,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "0dc4a527a0d63989",
+        "type": "inject",
+        "z": "ae9bfe205a6f55de",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 320,
+        "y": 240,
+        "wires": [
+            [
+                "0e9d7ec6f747dad5"
+            ]
+        ]
+    },
+    {
+        "id": "4ede1b9a68c33bf7",
+        "type": "debug",
+        "z": "ae9bfe205a6f55de",
+        "name": "msg.payload",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 750,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "0e9d7ec6f747dad5",
+        "type": "Container",
+        "z": "ae9bfe205a6f55de",
+        "name": "",
+        "platform": "ae1f9451e7ecdcc0",
+        "name1": "f3c91e4137db8229",
+        "viewtype": "DATA",
+        "viewunid1": "",
+        "x": 540,
+        "y": 240,
+        "wires": [
+            [
+                "4ede1b9a68c33bf7"
+            ]
+        ]
+    },
+    {
+        "id": "123985bf17416987",
+        "type": "inject",
+        "z": "ae9bfe205a6f55de",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 320,
+        "y": 340,
+        "wires": [
+            [
+                "92e19946d736f77c"
+            ]
+        ]
+    },
+    {
+        "id": "92e19946d736f77c",
+        "type": "Container",
+        "z": "ae9bfe205a6f55de",
+        "name": "",
+        "platform": "ae1f9451e7ecdcc0",
+        "name1": "f3c91e4137db8229",
+        "viewtype": "autre",
+        "viewunid1": "water_control",
+        "x": 540,
+        "y": 340,
+        "wires": [
+            [
+                "25bb1c330f9cc8b4"
+            ]
+        ]
+    },
+    {
+        "id": "25bb1c330f9cc8b4",
+        "type": "debug",
+        "z": "ae9bfe205a6f55de",
+        "name": "debug 23",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 740,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "70067aa5fb4b7571",
+        "type": "inject",
+        "z": "ae9bfe205a6f55de",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 320,
+        "y": 440,
+        "wires": [
+            [
+                "798cec16e4f97d43"
+            ]
+        ]
+    },
+    {
+        "id": "798cec16e4f97d43",
+        "type": "Subscription",
+        "z": "ae9bfe205a6f55de",
+        "name": "",
+        "platform": "ae1f9451e7ecdcc0",
+        "sensor": "f3c91e4137db8229",
+        "container": "DATA",
+        "path": "http://localhost:1880/monitor",
+        "x": 530,
+        "y": 440,
+        "wires": [
+            [
+                "f037a58f3d37d505"
+            ]
+        ]
+    },
+    {
+        "id": "f037a58f3d37d505",
+        "type": "debug",
+        "z": "ae9bfe205a6f55de",
+        "name": "msg.payload",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 750,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "0fd95c7e2742ec38",
+        "type": "http in",
+        "z": "ae9bfe205a6f55de",
+        "name": "",
+        "url": "/sensorData",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 330,
+        "y": 540,
+        "wires": [
+            [
+                "6db501c106465653",
+                "81e41caa1dd7c3ca"
+            ]
+        ]
+    },
+    {
+        "id": "6db501c106465653",
+        "type": "function",
+        "z": "ae9bfe205a6f55de",
+        "name": "function 4",
+        "func": "/*jshint multistr: true */\nvar data = '<m2m:cin xmlns:m2m=\"http://www.onem2m.org/xml/protocols\">\\\n\t<cnf>message</cnf>\\\n\t<con>\\\n\t  &lt;obj&gt;\\\n\t\t&lt;str name=&quot;moisture&quot; val=&quot;' + msg.payload.moisture + '&quot;/&gt;\\\n\t\t&lt;str name=&quot;rainProbability&quot; val=&quot;' + msg.payload.rainProbability + '&quot;/&gt;\\\n\t  &lt;/obj&gt;\\\n\t</con>\\\n</m2m:cin>';\n\nmsg.payload = data;\nmsg.headers = {};\nmsg.headers['X-M2M-Origin'] = 'admin:admin';   // OM2M 預設帳密\nmsg.headers['Content-Type'] = 'application/xml;ty=4';  // ty=4 = ContentInstance\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 540,
+        "wires": [
+            [
+                "5e493a6f5e6734a2"
+            ]
+        ]
+    },
+    {
+        "id": "5e493a6f5e6734a2",
+        "type": "http request",
+        "z": "ae9bfe205a6f55de",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://127.0.0.1:8080/~/in-cse/in-name/Smart_farm/DATA",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 690,
+        "y": 540,
+        "wires": [
+            [
+                "dfa120430458727c",
+                "aa88a084e33709c4"
+            ]
+        ]
+    },
+    {
+        "id": "dfa120430458727c",
+        "type": "http response",
+        "z": "ae9bfe205a6f55de",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 850,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "aa88a084e33709c4",
+        "type": "debug",
+        "z": "ae9bfe205a6f55de",
+        "name": "debug 24",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 880,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "81e41caa1dd7c3ca",
+        "type": "debug",
+        "z": "ae9bfe205a6f55de",
+        "name": "debug 25",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 540,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "7a9ac556358e3c77",
+        "type": "http in",
+        "z": "ae9bfe205a6f55de",
+        "name": "",
+        "url": "/monitor",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 330,
+        "y": 760,
+        "wires": [
+            [
+                "5b1c3b7e84f79398"
+            ]
+        ]
+    },
+    {
+        "id": "5b1c3b7e84f79398",
+        "type": "xml",
+        "z": "ae9bfe205a6f55de",
+        "name": "",
+        "property": "payload",
+        "attr": "",
+        "chr": "",
+        "x": 490,
+        "y": 760,
+        "wires": [
+            [
+                "815557683f79df4f"
+            ]
+        ]
+    },
+    {
+        "id": "815557683f79df4f",
+        "type": "switch",
+        "z": "ae9bfe205a6f55de",
+        "name": "",
+        "property": "payload[\"m2m:sgn\"].nev[0]",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "null"
+            },
+            {
+                "t": "nnull"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 630,
+        "y": 760,
+        "wires": [
+            [
+                "2210e1758ad3f5d0"
+            ],
+            [
+                "ec5cd269f625b7ec"
+            ]
+        ]
+    },
+    {
+        "id": "2210e1758ad3f5d0",
+        "type": "http response",
+        "z": "ae9bfe205a6f55de",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 810,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "ec5cd269f625b7ec",
+        "type": "function",
+        "z": "ae9bfe205a6f55de",
+        "name": "function 5",
+        "func": "var data = msg.payload[\"m2m:sgn\"].nev[0].rep[0][\"m2m:cin\"][0].con[0];\n\n// 用正則表達式找 moisture 和 rainProbability\nvar moistureMatch = data.match(/name=\"moisture\" val=\"(\\d+)\"/);\nvar rainProbabilityMatch = data.match(/name=\"rainProbability\" val=\"(\\d+)\"/);\n\nvar moisture = moistureMatch ? parseInt(moistureMatch[1]) : 0;\nvar rainProbability = rainProbabilityMatch ? parseInt(rainProbabilityMatch[1]) : 0;\n\nmsg.moisture = moisture;\nmsg.rainProbability = rainProbability;\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 800,
+        "wires": [
+            [
+                "82085191ee029871"
+            ]
+        ]
+    },
+    {
+        "id": "82085191ee029871",
+        "type": "function",
+        "z": "ae9bfe205a6f55de",
+        "name": "function 6",
+        "func": "var water = 0;\nvar status = \"不澆水\";\n\nif (msg.moisture < 30 && msg.rainProbability < 30) {\n    water = 100;\n    status = \"大量澆水\";\n} else if (msg.moisture < 30 && msg.rainProbability < 60) {\n    water = 70;\n    status = \"中量澆水\";\n} else if (msg.moisture < 30) {\n    water = 30;\n    status = \"微量澆水\";\n} else if (msg.moisture < 50 && msg.rainProbability < 30) {\n    water = 50;\n    status = \"適量澆水\";\n} else if (msg.moisture < 50 && msg.rainProbability < 60) {\n    water = 20;\n    status = \"少量澆水\";\n} else {\n    water = 0;\n    status = \"不澆水\";\n}\n\nvar New = {\n    amount: water,\n    status: status\n};\n\nmsg.payload = New;\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 940,
+        "y": 800,
+        "wires": [
+            [
+                "223d1311e5df9cb4"
+            ]
+        ]
+    },
+    {
+        "id": "223d1311e5df9cb4",
+        "type": "function",
+        "z": "ae9bfe205a6f55de",
+        "name": "function 7",
+        "func": "/*jshint multistr: true */\nvar data = '<m2m:cin xmlns:m2m=\"http://www.onem2m.org/xml/protocols\">\\\n<cnf>message</cnf>\\\n<con>\\\n  &lt;obj&gt;\\\n    &lt;int name=&quot;amount&quot; val=&quot;' + msg.payload.amount + '&quot;/&gt;\\\n    &lt;str name=&quot;status&quot; val=&quot;' + msg.payload.status + '&quot;/&gt;\\\n  &lt;/obj&gt;\\\n</con>\\\n</m2m:cin>';\n\nmsg.payload = data;\nmsg.headers = {};\nmsg.headers['X-M2M-Origin'] = 'admin:admin';\nmsg.headers['Content-Type'] = 'application/xml;ty=4';\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1120,
+        "y": 800,
+        "wires": [
+            [
+                "1e4b09810e16a17d"
+            ]
+        ]
+    },
+    {
+        "id": "1e4b09810e16a17d",
+        "type": "http request",
+        "z": "ae9bfe205a6f55de",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://127.0.0.1:8080/~/in-cse/in-name/Smart_farm/water_control",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1310,
+        "y": 800,
+        "wires": [
+            [
+                "71a38cff2cefcb17"
+            ]
+        ]
+    },
+    {
+        "id": "71a38cff2cefcb17",
+        "type": "debug",
+        "z": "ae9bfe205a6f55de",
+        "name": "debug 26",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1480,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "ae1f9451e7ecdcc0",
+        "type": "xN_CSE",
+        "platform": "in-cse",
+        "URLBase": "http://127.0.0.1:8282/~/in-cse/in-name",
+        "user": "admin",
+        "password": "admin"
+    },
+    {
+        "id": "f3c91e4137db8229",
+        "type": "AE",
+        "appId": "Smart_farm"
+    }
+]
